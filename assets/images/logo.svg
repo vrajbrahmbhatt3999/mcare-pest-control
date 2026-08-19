@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 85" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- ════════ LEFT: HOUSE PEST GRID ICON MARK ════════ -->
+  <g id="house-pest-mark" transform="translate(4, 2)">
+    <!-- Roof -->
+    <polygon points="36,2 6,20 36,20" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+    <polygon points="36,2 36,20 66,20" fill="#16a34a" stroke="#15803d" stroke-width="1"/>
+
+    <!-- Cockroach Icon (Top Left - Grey) -->
+    <rect x="8" y="22" width="26" height="22" rx="3" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <g fill="#1e293b">
+      <ellipse cx="21" cy="33" rx="3.8" ry="6"/>
+      <circle cx="21" cy="26" r="1.8"/>
+      <path d="M20 25 Q16 21 13 19 M22 25 Q26 21 29 19" stroke="#1e293b" stroke-width="1" fill="none"/>
+      <path d="M17 30 L12 29 M17 33 L11 33 M17 36 L12 37" stroke="#1e293b" stroke-width="1"/>
+      <path d="M25 30 L30 29 M25 33 L31 33 M25 36 L30 37" stroke="#1e293b" stroke-width="1"/>
+    </g>
+
+    <!-- Termite Icon (Top Right - Green) -->
+    <rect x="36" y="22" width="26" height="22" rx="3" fill="#22c55e"/>
+    <g fill="#0f172a">
+      <ellipse cx="49" cy="34" rx="3.5" ry="5"/>
+      <circle cx="49" cy="27" r="1.8"/>
+      <path d="M48 26 L44 22 M50 26 L54 22" stroke="#0f172a" stroke-width="1"/>
+      <path d="M45 30 L40 29 M45 34 L39 35 M45 37 L40 39" stroke="#0f172a" stroke-width="1"/>
+      <path d="M53 30 L58 29 M53 34 L59 35 M53 37 L58 39" stroke="#0f172a" stroke-width="1"/>
+    </g>
+
+    <!-- Ant Icon (Bottom Left - Green) -->
+    <rect x="8" y="46" width="26" height="22" rx="3" fill="#22c55e"/>
+    <g fill="#0f172a">
+      <circle cx="21" cy="51" r="1.6"/>
+      <ellipse cx="21" cy="56" rx="2" ry="2.4"/>
+      <ellipse cx="21" cy="62" rx="3.2" ry="3.8"/>
+      <path d="M20 50 L16 46 M22 50 L26 46" stroke="#0f172a" stroke-width="1"/>
+      <path d="M19 55 L13 53 M19 57 L13 58 M19 59 L14 63" stroke="#0f172a" stroke-width="1"/>
+      <path d="M23 55 L29 53 M23 57 L29 58 M23 59 L28 63" stroke="#0f172a" stroke-width="1"/>
+    </g>
+
+    <!-- Mouse/Rat Icon (Bottom Right - Grey) -->
+    <rect x="36" y="46" width="26" height="22" rx="3" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+    <g fill="#1e293b">
+      <path d="M42 62 C40 54, 47 49, 55 50 C58 50.5, 60 52, 60 56 C60 60, 54 62, 48 62 Z"/>
+      <circle cx="56" cy="52" r="1" fill="#0f172a"/>
+      <path d="M42 62 Q36 62 38 66 Q40 68 44 65" fill="none" stroke="#1e293b" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ════════ RIGHT: M CARE SERVICES BRAND TEXT ════════ -->
+  <g id="brand-text" transform="translate(80, 0)">
+    <!-- 'M' Left Stem -->
+    <path d="M 4 56 L 4 18 L 18 18 L 30 44 L 30 56 Z" fill="url(#mGreen)"/>
+    
+    <!-- 'M' Right Stem -->
+    <path d="M 40 18 L 54 18 L 54 56 L 40 56 Z" fill="url(#mGreen)"/>
+
+    <!-- Silver Checkmark Swoosh crossing 'M' -->
+    <path d="M 10 22 L 28 58 Q 50 12 125 16 Q 58 12 28 46 Z" fill="url(#silverGrad)" filter="url(#shadow)"/>
+
+    <!-- "CARE" Text (Bold Green) -->
+    <text x="60" y="55" font-family="'Outfit', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="46" fill="#16a34a" letter-spacing="1">CARE</text>
+
+    <!-- "SERVICES" Subtitle -->
+    <text x="62" y="73" font-family="'Outfit', 'Arial', sans-serif" font-weight="900" font-size="13" fill="#334155" letter-spacing="7">SERVICES</text>
+  </g>
+</svg>
