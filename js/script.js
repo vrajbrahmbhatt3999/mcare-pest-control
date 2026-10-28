@@ -145,6 +145,42 @@ contactForm?.addEventListener('submit', e => {
   }, 1200);
 });
 
+/* ─── Hero Quick Quote Form ─────────────────────────────────── */
+const heroQuickForm = document.getElementById('hero-quick-form');
+const heroFormSuccess = document.getElementById('hero-form-success');
+
+heroQuickForm?.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('hq-name')?.value.trim();
+  const phone = document.getElementById('hq-phone')?.value.trim();
+  const service = document.getElementById('hq-service')?.value || 'General Pest Control';
+
+  if (!name || !phone) {
+    alert('Please enter your full name and phone number.');
+    return;
+  }
+
+  const submitBtn = heroQuickForm.querySelector('.btn-quote-submit');
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Booking Free Inspection...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+  }
+
+  setTimeout(() => {
+    heroQuickForm.reset();
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>Book Free Inspection Now</span> <i class="fa-solid fa-arrow-right"></i>';
+    }
+    if (heroFormSuccess) {
+      heroFormSuccess.style.display = 'flex';
+      setTimeout(() => {
+        heroFormSuccess.style.display = 'none';
+      }, 7000);
+    }
+  }, 1000);
+});
+
 /* ─── Navbar close on resize ────────────────────────────────── */
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) closeMenu();

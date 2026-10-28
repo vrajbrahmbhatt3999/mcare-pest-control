@@ -76,38 +76,133 @@
       <div class="hero-grid">
         <div class="hero-content">
           <div class="hero-badge fade-in" aria-label="Professional service label">
-            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-            Professional Pest Control Services
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            Govt. Approved &amp; Certified • Vadodara
           </div>
           <h1 class="hero-title fade-in delay-1">
-            Protect Your Home From Pests With <span>M Care</span> Pest Control
+            Protect Your Home &amp; Business From Pests With <span>M Care</span>
           </h1>
           <p class="hero-subtitle fade-in delay-2">
-            Professional pest control solutions for bed bugs, cockroaches, ants, mosquitoes, termites, lizards, rats,
-            wood borers and other common pests. Serving homes and businesses in Vadodara.
+            Vadodara’s trusted pest control specialists. Fast, odorless, and eco-safe treatments for termites, bed bugs, cockroaches, mosquitoes, and rodents with written warranty.
           </p>
-          <div class="hero-buttons fade-in delay-3">
-            <a href="#contact" class="btn btn-primary" aria-label="Get a free consultation">
-              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Get a Free Consultation
+
+          <div class="hero-key-points fade-in delay-3">
+            <div class="hero-point">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>100% Odorless &amp; Safe Chemicals</span>
+            </div>
+            <div class="hero-point">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>Same-Day Inspection in Vadodara</span>
+            </div>
+            <div class="hero-point">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>Up to 1 to 5 Years Warranty</span>
+            </div>
+            <div class="hero-point">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>Govt. Approved &amp; Licensed Experts</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons fade-in delay-4">
+            <a href="tel:7874989872" class="btn btn-primary" aria-label="Call M Care Pest Control">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> Call: 7874989872
             </a>
-            <a href="#services" class="btn btn-secondary" aria-label="Explore our services">
-              <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Explore Our Services
+            <a href="https://wa.me/917874989872?text=Hello%20M%20Care%20Pest%20Control,%20I%20need%20a%20free%20inspection%20in%20Vadodara" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Chat on WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Us
             </a>
           </div>
-          <div class="hero-phone fade-in delay-4">
-            <div class="icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
-            <span>Call us: <a href="tel:7874989872" style="color:var(--accent);font-weight:700">7874989872</a></span>
+
+          <div class="hero-trust-note fade-in delay-4">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Serving all areas across <strong>Vadodara, Gujarat</strong> &bull; Free On-Site Consultation</span>
           </div>
         </div>
-        <div class="hero-image fade-in-right delay-2">
-          <img src="assets/images/hero.png" alt="Professional pest control technician treating a home"
-            loading="eager" />
-          <div class="hero-float-card" aria-hidden="true">
-            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="text">
-              <strong>Local Service</strong>
-              <span>Vadodara, Gujarat</span>
+
+        <div class="hero-card-col fade-in-right delay-2">
+          <div class="hero-quote-card">
+            <div class="quote-card-header">
+              <div class="quote-badge">
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i> 15-Min Fast Callback
+              </div>
+              <h2 class="quote-title">Get a Free Inspection &amp; Quote</h2>
+              <p class="quote-subtitle">Share your pest problem &amp; our Vadodara technician will contact you immediately.</p>
             </div>
+            <form id="hero-quick-form" class="hero-quick-form" novalidate>
+              <div class="hq-form-group">
+                <label for="hq-name"><i class="fa-solid fa-user" aria-hidden="true"></i> Full Name</label>
+                <input type="text" id="hq-name" name="name" placeholder="e.g. Rajesh Patel" required>
+              </div>
+              <div class="hq-form-group">
+                <label for="hq-phone"><i class="fa-solid fa-phone" aria-hidden="true"></i> Phone Number</label>
+                <input type="tel" id="hq-phone" name="phone" placeholder="e.g. 98765 43210" required>
+              </div>
+              <div class="hq-form-group">
+                <label for="hq-service"><i class="fa-solid fa-bug" aria-hidden="true"></i> Pest Issue</label>
+                <select id="hq-service" name="service" required>
+                  <option value="" disabled selected>Select your pest problem...</option>
+                  <option value="Termite Treatment">Termite Treatment (Pre &amp; Post Construction)</option>
+                  <option value="Bed Bug Control">Bed Bug Control (2-Service Spray Treatment)</option>
+                  <option value="Cockroach &amp; Ant Control">Cockroach &amp; Ant Control (Herbal Gel Bait)</option>
+                  <option value="Mosquito Control">Mosquito Spraying &amp; Fogging</option>
+                  <option value="Rodent &amp; Rat Control">Rodent / Rat Trapping &amp; Control</option>
+                  <option value="Wood Borer / Lizard / Other">Wood Borer / Lizard / General Pests</option>
+                  <option value="Comprehensive Home Inspection">Comprehensive Full Home Inspection</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-quote-submit" aria-label="Book Free Inspection">
+                <span>Book Free Inspection Now</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
+            <div id="hero-form-success" class="hero-form-alert" role="alert" style="display:none;">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <div>
+                <strong>Thank you!</strong>
+                <span>Our Vadodara pest control expert is calling you shortly.</span>
+              </div>
+            </div>
+            <div class="quote-card-footer">
+              <div class="footer-guarantee"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Zero Obligation</div>
+              <div class="footer-guarantee"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 100% Privacy</div>
+              <div class="footer-guarantee"><i class="fa-solid fa-tag" aria-hidden="true"></i> Best Rates</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Counters Bar -->
+      <div class="hero-trust-bar fade-in delay-4" aria-label="Key highlights">
+        <div class="trust-stat">
+          <div class="trust-stat-icon"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></div>
+          <div class="trust-stat-content">
+            <span class="trust-number">5,000+</span>
+            <span class="trust-label">Properties Treated</span>
+          </div>
+        </div>
+        <div class="trust-bar-divider" aria-hidden="true"></div>
+        <div class="trust-stat">
+          <div class="trust-stat-icon"><i class="fa-solid fa-shield-virus" aria-hidden="true"></i></div>
+          <div class="trust-stat-content">
+            <span class="trust-number">100% Safe</span>
+            <span class="trust-label">Govt. Approved Chemicals</span>
+          </div>
+        </div>
+        <div class="trust-bar-divider" aria-hidden="true"></div>
+        <div class="trust-stat">
+          <div class="trust-stat-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+          <div class="trust-stat-content">
+            <span class="trust-number">1 to 5 Yrs</span>
+            <span class="trust-label">Service Warranty</span>
+          </div>
+        </div>
+        <div class="trust-bar-divider" aria-hidden="true"></div>
+        <div class="trust-stat">
+          <div class="trust-stat-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+          <div class="trust-stat-content">
+            <span class="trust-number">4.9 / 5.0</span>
+            <span class="trust-label">Customer Rating</span>
           </div>
         </div>
       </div>
@@ -186,12 +281,52 @@
   <section class="about" id="about" aria-labelledby="about-heading">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image fade-in-left">
-          <img src="assets/images/about.png" alt="M Care Pest Control professional team ready for service"
-            loading="lazy" />
-          <div class="about-badge" aria-label="Based in Vadodara">
-            <strong><i class="fa-solid fa-location-dot"></i></strong>
-            <span>Vadodara, Gujarat</span>
+        <div class="about-card-wrapper fade-in-left">
+          <div class="about-cred-card">
+            <div class="about-cred-header">
+              <div class="cred-tag"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Certified &amp; Trusted</div>
+              <h3>Vadodara's Dedicated Pest Specialists</h3>
+              <p>Committed to eco-friendly, odorless, and health-conscious pest elimination for homes and businesses.</p>
+            </div>
+            
+            <div class="about-stats-grid">
+              <div class="about-stat-item">
+                <div class="stat-icon-wrap"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></div>
+                <div class="stat-text-wrap">
+                  <h4>5,000+</h4>
+                  <p>Homes &amp; Offices Protected</p>
+                </div>
+              </div>
+              <div class="about-stat-item">
+                <div class="stat-icon-wrap"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+                <div class="stat-text-wrap">
+                  <h4>CIB Certified</h4>
+                  <p>Approved Safe Chemicals</p>
+                </div>
+              </div>
+              <div class="about-stat-item">
+                <div class="stat-icon-wrap"><i class="fa-solid fa-shield-virus" aria-hidden="true"></i></div>
+                <div class="stat-text-wrap">
+                  <h4>100% Odorless</h4>
+                  <p>Kid &amp; Pet Safe Solutions</p>
+                </div>
+              </div>
+              <div class="about-stat-item">
+                <div class="stat-icon-wrap"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+                <div class="stat-text-wrap">
+                  <h4>Warranty Support</h4>
+                  <p>Free Follow-up &amp; Re-visit</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-location-banner">
+              <div class="loc-pin"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <div class="loc-text">
+                <strong>Local Vadodara Head Office</strong>
+                <span>Near Makarpura Road &bull; Covering all Vadodara areas</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="about-content fade-in-right">
